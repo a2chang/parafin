@@ -46,12 +46,12 @@ $ npm run dev
 	https://docs.parafin.com/program-management/webhooks
 
 
-## Directory contents
+## Project contents
 
 * [.env](.env) Link to `.env` file in `parafin-elements-flex-quickstart` submodule.  Contains sandbox key id/secret.
 * [parafin-elements-flex-quickstart](parafin-elements-flex-quickstart) Modified fork of parafin repo.  Changes: modified App.js to include person id.
 * [scripts](scripts) Set of scripts which call the parafin API.
-* [demo](https://drive.google.com/file/d/1KRqPY0_CgpbZoysdW_1zPqYJWLSBk8n9/view?usp=sharing) Video of our demo.
+* [demo](https://drive.google.com/file/d/1KRqPY0_CgpbZoysdW_1zPqYJWLSBk8n9/view?usp=sharing) Video of our demo (apologies - the start appears to have been truncated by a few seconds).
 
 
 ## Scripts
