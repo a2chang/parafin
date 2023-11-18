@@ -14,7 +14,7 @@ curl https://api.parafin.com/v1/businesses \
       "city": "Vancouver",
       "state": "WA",
       "postal_code": "94043",
-      "country": "CA"
+      "country": "US"
     },
     "established_date": "2023-11-17",
     "incorporation_state": "CA",
