@@ -3,17 +3,21 @@
 
 ## Getting started
 
-This repo uses submodules.  Be sure to run `git submodule init`.
+This repo uses submodules.  Be sure to run `git submodule init` and `git submodule update` after cloning this repo.
 
 To launch the web UI:
 ```
 $ git clone https://github.com/a2chang/parafin.git
+$ cd parafin
 $ git submodule init
+$ git submodule update
 $ cd parafin-elements-flex-quickstart
 $ npm install
 $ cp ../.env .
 $ npm run dev
 ```
+
+See the steps for recreating this demo at the end of this file.
 
 
 ## GrubDash questions
@@ -65,8 +69,8 @@ $ npm run dev
 ## Demo steps
 
 * Create business, person, bank account records:
-  * `Business_create.sh` - create a business (add `business_id` in `.env`)
-  * `Person_create.sh` - create a person (add `person_id` in `.env`)
+  * `Business_create.sh` - create a business (set the id in `BUSINESS_ID` in `.env`)
+  * `Person_create.sh` - create a person (set the id in `PERSON_ID` in `.env`)
   * `BankAccount_create.sh` - create a bank account
   At this point, the business should be able to access to the UI to see that there are no offers available.
 * Generate an offer using `Offer_generate.sh` for the business to see that a pre-approved offer is available.
