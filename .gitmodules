@@ -1,0 +1,3 @@
+[submodule "parafin-elements-flex-quickstart"]
+	path = parafin-elements-flex-quickstart
+	url = https://github.com/a2chang/parafin-elements-flex-quickstart.git
