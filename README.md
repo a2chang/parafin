@@ -51,7 +51,7 @@ $ npm run dev
 * [.env](.env) Link to `.env` file in `parafin-elements-flex-quickstart` submodule.  Contains sandbox key id/secret.
 * [parafin-elements-flex-quickstart](parafin-elements-flex-quickstart) Modified fork of parafin repo.  Changes: modified App.js to include person id.
 * [scripts](scripts) Set of scripts which call the parafin API.
-* [demo](demo) Contains a video of our demo.
+* [demo](https://drive.google.com/file/d/1KRqPY0_CgpbZoysdW_1zPqYJWLSBk8n9/view?usp=sharing) Video of our demo.
 
 
 ## Scripts
@@ -60,5 +60,15 @@ $ npm run dev
 * `Person_create.sh` - create a person (record `person_id` in `.env`)
 * `BankAccount_create.sh` - create a bank account
 * `Offer_generate.sh` - generate a `flex_loan` offer to the business
-* At this point, the user needs to click through the UI to accept the offer (Capital on its way)
 * `Offer_post_accept.sh` - funds the offer and allows the UI to show the outstanding balance
+
+## Demo steps
+
+* Create business, person, bank account records:
+  * `Business_create.sh` - create a business (add `business_id` in `.env`)
+  * `Person_create.sh` - create a person (add `person_id` in `.env`)
+  * `BankAccount_create.sh` - create a bank account
+  At this point, the business should be able to access to the UI to see that there are no offers available.
+* Generate an offer using `Offer_generate.sh` for the business to see that a pre-approved offer is available.
+* The user needs to click through the UI to accept the offer (Capital on its way will be shown).
+* Fund the offer using `Offer_post_accept.sh` for the UI to show the outstanding balance.
